@@ -70,4 +70,10 @@ router.post('/signup', async (req, res, next) => {
     }
 });
 
+/* GET logout */
+// why would be get? it didnt work until I updated to POST
+router.get('/logout', (req, res, next) => {
+  res.redirect('auth/login')
+});
+
 module.exports = router;
