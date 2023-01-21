@@ -11,6 +11,7 @@ const MongoStore = require('connect-mongo');
 // router files
 const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
+const recipesRouter = require('./routes/recipes');
 
 const app = express();
 
@@ -57,6 +58,7 @@ app.use(
 // router endpoint setting
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
+app.use('/recipes', recipesRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
