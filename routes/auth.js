@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-// missing User model
+const User = require('../models/User');
 
 // GET signup view
 // ROUTE /auth/signup
