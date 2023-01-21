@@ -12,5 +12,19 @@ router.get ("/", async (req,res,next) => {
   }
 })
 
+/*Get details*/
+
+router.get("/recipes/:id", async (req, res, next) => {
+  try {
+    const recipe = await Recipe.findById(req.params.id);
+    res.render("recipeDetails", { recipe });
+    console.log( recipe);
+  } catch (err) {
+    // console.log(err);
+    next(err);
+  }
+});
+
+
 module.exports = router;
 

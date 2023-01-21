@@ -1,0 +1,19 @@
+<div class="recipeDetails">
+  <h2> {{recipe.name}}</h2>
+  <img src="{{recipe.image}}" alt="{{recipe.name}}" />
+
+  <p>People: {{recipe.people}}</p>
+  <p>Time: {{recipe.time}}</p>
+
+  <ul>
+    {{#each recipe.ingredients}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p>Level: {{recipe.level}}</p>
+  <p>Creator: {{recipe.creator}}</p>
+</div>
+<div class="btnRecipeDetails">
+  <a href="/recipes/{{recipe._id}}/edit">EDIT</a>
+  <a href="/recipes"> Go back </a>
+</div>
