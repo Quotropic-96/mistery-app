@@ -24,7 +24,7 @@ router.post('/login', async (req, res, next) => {
       const passwordMatch = await bcrypt.compare(password, userInDB.hashedPassword);
       if (passwordMatch) {
         req.session.currentUser = userInDB;
-        res.render('user/profile', {userInDB});
+        res.render('user/profile', userInDB);
       } else {
         res.render('auth/login',  { error: 'Unable to authenticate user' });
         return;
@@ -62,7 +62,7 @@ router.post('/signup', async (req, res, next) => {
         } else {
             const salt = await bcrypt.genSalt(saltRounds);
             const hashedPassword = await bcrypt.hash(password, salt);
-            const user =await User.create({ username, hashedPassword });
+            const user = await User.create({ username, hashedPassword });
             res.render('user/profile', user);
         }
     } catch (error) {
@@ -73,7 +73,7 @@ router.post('/signup', async (req, res, next) => {
 /* GET logout */
 // why would be get? it didnt work until I updated to POST
 router.get('/logout', (req, res, next) => {
-  res.redirect('auth/login')
+  res.redirect('/auth/login')
 });
 
 module.exports = router;
