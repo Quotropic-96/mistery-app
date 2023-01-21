@@ -1,0 +1,25 @@
+<h2>New Recipe</h2>
+{{#if error}}
+    <p style="color: red;">{{error}}</p>
+{{/if}}
+<form action="/recipes/new" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="Pa amb tomaquet" required>
+    <label for="people">For how many people:</label>
+    <input type="number" name="people" placeholder="4" required>
+    <label for="time">Preparation time (in minutes):</label>
+    <input type="number" name="time" placeholder="90" required>
+    <label for="level">Difficulty</label>
+    <select name="level">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
+    <label for="image">Link to the image:</label>
+    <input type="text" name="image">
+    <label for="ingredients">Enter ingredients separated by comma:</label>
+    <input type="text" name="ingredients" placeholder="bread,tomatoe,..." required>
+    <label for="description">Description:</label>
+    <input type="text" name="description">
+    <button type="submit">Submit</button>
+</form>
