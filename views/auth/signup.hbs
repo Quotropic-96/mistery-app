@@ -1,12 +1,12 @@
 <h2>Sign Up!</h2>
-    <form method=“POST” action=“/auth/signup”>
+    <form method="POST" action="/auth/signup">
     <label> User name </label>
-    <input type=“text” name=“username” placeholder=“Clara Chía” required>
+    <input type="text" name="username" placeholder="Clara Chía" required>
     <label>Password</label>
-    <input type=“password” name=“password” placeholder=“**********” required>
-    <button type=“submit”>Register</button>
-    <a href=“/auth/login”>Are you registered? Log in here!</a>
+    <input type="password" name="password" placeholder="**********" required>
+    <button type="submit">Register</button>
+    <a href="/auth/login">Are you registered? Log in here!</a>
     {{#if error}}
-        <p style=“color:red”>{{error}}</p>
+        <p style="color:red">{{error}}</p>
     {{/if}}
 </form>
