@@ -1,3 +1,135 @@
 module.exports = [
-    
-]
+    {
+    name: "Asian Glazed Chicken Thighs",
+    people: 4,
+    time: 120,
+    level: "medium",
+    ingredients: [
+      "1/2 cup rice vinegar",
+      "5 tablespoons honey",
+      "1/3 cup soy sauce (such as Silver Swan®)",
+      "1/4 cup Asian (toasted) sesame oil",
+      "3 tablespoons Asian chili garlic sauce",
+      "3 tablespoons minced garlic",
+      "salt to taste",
+      "8 skinless, boneless chicken thighs"
+    ],
+    description: "dslkfnsdlkf sdfhsdljfhasld fialsdjfiasdjf apsd",
+    image: "https://images.media-allrecipes.com/userphotos/720x405/815964.jpg",
+    creator: "63cbc07dc90946cfe8cc0ad0",
+  },
+  {
+    name: "Orange and Milk-Braised Pork Carnitas",
+    people: 4,
+    time: 127,
+    level: "advanced",
+    ingredients: [
+      "3 1/2 pounds boneless pork shoulder, cut into large pieces",
+      "1 tablespoon freshly ground black pepper",
+      "1 tablespoon kosher salt, or more to taste",
+      "2 tablespoons vegetable oil",
+      "2 bay leaves",
+      "2 teaspoons ground cumin",
+      "1 teaspoon dried oregano",
+      "1/4 teaspoon cayenne pepper",
+      "1 orange, juiced and zested"
+    ],
+    description: "ksjdnclksdnksdncpksdnmfkdnsf sdfklndpkfndp",
+    image: "https://images.media-allrecipes.com/userphotos/720x405/2280918.jpg",
+    creator: "63cbc13711695e5eb02e04c6",
+  },
+  {
+    name: "Carrot Cake",
+    people: 6,
+    time: 180,
+    level: "easy",
+    ingredients: [
+      "6 cups grated carrots",
+      "1 cup brown sugar",
+      "1 cup raisins",
+      "4 eggs",
+      "1 1/2 cups white sugar",
+      "1 cup vegetable oil",
+      "2 teaspoons vanilla extract",
+      "1 cup crushed pineapple, drained",
+      "3 cups all-purpose flour",
+      "1 1/2 teaspoons baking soda",
+      "1 teaspoon salt",
+      "4 teaspoons ground cinnamon"
+    ],
+    description: "sd,knfsldk fjpsoqdjkfòsqdkf oqspof qs",
+    image: "https://images.media-allrecipes.com/userphotos/720x405/3605684.jpg",
+   creator: "63cbc07dc90946cfe8cc0ad0",
+  },
+  {
+    name: "Rigatoni alla Genovese",
+    people: 4,
+    time: 150,
+    level: "medium",
+    ingredients: [
+      "2 pounds red onions, sliced salt to taste",
+      "2 (16 ounce) boxes uncooked rigatoni",
+      "1 tablespoon chopped fresh marjoram leaves",
+      "1 pinch cayenne pepper",
+      "2 tablespoons freshly grated Parmigiano-Reggiano cheese"
+    ],
+    description: "lksdjnflksd flksadjfiosdhfyiuasd fdlsad jfhiqs",
+    image: "https://images.media-allrecipes.com/userphotos/720x405/3489951.jpg", 
+    creator: "63cbc13711695e5eb02e04c6",
+  },
+  {
+    name: "Chocolate Chip Cookies",
+    people: 6,
+    time: 100,
+    level: "advanced",
+    ingredients: [
+      "1/2 cup light brown sugar",
+      "1 large egg",
+      "2 tablespoons milk",
+      "1 1/4 teaspoons vanilla extract",
+      "2 cups semisweet chocolate chips"
+    ],
+    description: "lksdchnliasdhjfi asdpfijasdpij asdpijaiosdjoiasd oiasdhjcoiashdcla sdckhasdcjkhasd",
+    image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4398987.jpg&w=596&h=399.32000000000005&c=sc&poi=face&q=85",
+    creator: "63cbc13711695e5eb02e04c6",
+  },
+  {
+      name: "Roast beef with caramelised onion gravy",
+       people: 6,
+        time: 100,
+      level: 'Easy',
+      ingredients: [
+      "1 tbsp black peppercorn", 
+      "1 tbsp English mustard powder",
+      "1 tbsp dried thyme", 
+      "1 tsp celery seeds", 
+      "1 tbsp olive oil",
+      "about 2kg/4lb 8oz topside joint of beef "
+      ],
+      description: "english sdifhsdiof sdoifhsadoihfaodis foiadhfodhfosd fosdihfoisdh fsd",
+      image: "https://www.barkerbutchers.co.uk/wp-content/uploads/2019/09/traditional-roast-beef-caramelised-onion-gravy-3.jpg",
+      creator: "63cbc07dc90946cfe8cc0ad0",
+  },
+    {
+    name: "Catalan Ribs and Chickpeas Stew",
+    people: 8,
+    time: 185,
+    level: "advanced",
+    ingredients: [
+      "10 Pork Ribs",
+    "3 Red bell Peppers",
+    "3 Onions",
+    "1/4 Andalusian Olive oil",
+    "3 garlic gloves",
+    "3 tablespoons pepper",
+    "salt to taste",
+    "1 spoon of Paprika de la Vera",
+    "500gr Tomatoe Sauce",
+    "2 cloves",
+    "Tea Spoon of Cummin"
+    ],
+    description: "lksdchnliasdhjfi asdpfijasdpij asdpijaiosdjoiasd oiasdhjcoiashdcla sdckhasdcjkhasd",
+    image: "https://www.saveur.com/uploads/2022/01/18/Catalan-Braised-Pork-Joan_Roca-linda-pugliese.jpg?auto=webp&auto=webp&optimize=high&quality=70&width=720&dpr=2",
+    creator: "63cbc13711695e5eb02e04c6",
+  }
+];
