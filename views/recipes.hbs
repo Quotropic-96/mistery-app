@@ -1,5 +1,19 @@
-<div>
-  {{#each recipes}}
-    {{>recipepartial this}}
-  {{/each}}
-</div>
+<body id="recipes-bg">
+  <div>
+    {{#each recipes}}
+      <div class="recipe-card-expanded">
+        <div class="card-expanded-container-recipe">
+          <img height="350" src="{{image}}" alt="{{name}}"/>
+        </div>  
+        <div class="card-container">
+          <h2>{{name}}</h2>
+          <p>People:<br>{{people}}</p>
+          <p>Time:<br>{{time}}</p>
+          <p>Level:{{level}}</p>
+     </div>
+     <div id="button-see-more">
+      <a href="/recipes/{{_id}}">See More</a>
+    </div>
+    {{/each}} 
+  </div>
+</body>

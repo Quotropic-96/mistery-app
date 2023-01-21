@@ -90,7 +90,153 @@ ul li {
   width: 120px;
 }
 
+#menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  float: right;
+  margin-top: 115px;
+}
 
+h1 {
+  font-size: 6rem;
+  color:white;
+  width: 300px;
+  text-align: left;
+}
+
+a#home-button {
+  color: #121267;
+  background-color: #fff;
+  margin-top: 45px;
+  padding: 5px 75px;
+  border-radius: 50px;
+  font-size: 2rem;
+  text-decoration: none;
+  width: fit-content;
+}
+
+/* RECIPES PAGE */
+body#recipes-bg {
+  background-color: white;
+}
+
+#recipes-main {
+  display: block;
+  text-align: center;
+}
+
+#recipes-main h1 {
+  color: #000;
+  margin: auto;
+  width: max-content;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+#recipes-main p {
+  margin-bottom: 20px;
+}
+
+/* RECIPES CARDS */
+.recipe-card {
+  width: 75%;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
+  padding: 22px;
+  border-radius: 25px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.recipe-card:first-child {
+  margin-top: 75px;
+  }
+  
+.recipe-card:last-child {
+margin-bottom: 75px;
+}
+
+.recipe-card-expanded {
+    width: 75%;
+    /* position: relative; */
+    /* max-width: 800px; */
+    /* margin: auto; */
+    background: #fff;
+    box-shadow: 0px 14px 80px rgb(34 35 58 / 20%);
+    padding: 22px;
+    border-radius: 25px;
+    height: 400px;
+    /* display: flex; */
+    margin-top: 10px;
+}
+
+
+.recipe-card-expanded:first-child {
+margin-top: 75px;
+}
+
+.recipe-card-expanded:last-child {
+margin-bottom: 75px;
+}
+
+.recipe-card > img {
+display: block;
+margin: 0px 25px;
+}
+
+.recipe-card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container-recipe {
+margin-top: 15px;
+padding: 0px 40px;
+width: 15vw;
+display: flex;
+justify-content: center;
+}
+
+.card-container {
+padding: 0px 40px;
+width: 85vw;
+}
+
+.card-container > h2 {
+font-size: 30px;
+}
+
+.card-container > p {
+margin-top: 25px;
+font-size: 16px;
+}
+
+/* SEE MORE BUTTONS */
+#button-see-more {
+  display: block;
+}
+
+#button-see-more > a {
+  background: #20c3a9;
+  color: #fff;
+  padding: 15px 0px;
+  margin-top: 40px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+p#not-found {
+  margin-top: 100px;
+}
 
 
 
