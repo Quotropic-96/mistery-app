@@ -15,7 +15,10 @@ const recipeSchema = new Schema({
         type: Number,
         required: [true, 'You must enter the duration']
     }, //tiempo de preparación en minutos
-    level: String, //podrá ser "advanced", "easy", "medium"
+    level: {
+        type: String,
+        enum: ['Easy', 'Medium', 'Hard']
+    }, //podrá ser "advanced", "easy", "medium"
     image: {
         type: String,
         default: 'https://www.genius100visions.com/wp-content/uploads/2017/09/placeholder-vertical.jpg'
