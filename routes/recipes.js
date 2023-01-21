@@ -35,7 +35,7 @@ router.post('/new', async (req, res, next) => {
 
 /*Get details*/
 
-router.get("/recipes/:id", async (req, res, next) => {
+router.get("/:id", async (req, res, next) => {
   try {
     const recipe = await Recipe.findById(req.params.id);
     res.render("recipeDetails", { recipe });
