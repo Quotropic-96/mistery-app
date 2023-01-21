@@ -5,15 +5,40 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
-      trim: true,
-      required: [true, 'Username is required!'],
+      required: [true, 'Please add a username'],
       unique: true,
-      lowercase: true
+      trim: true,
+    },
+    email: {
+      type: String,
+      required: [true, 'Please add a valid email'],
+      unique: true,
+      trim: true,
+      lowercase: true,
+      match: [/^\S+@\S+\.\S+$/, 'Please use a valid email address.'],
     },
     hashedPassword: {
       type: String,
-      required: [true, 'Password is required.']
-    } 
+      required: [true, 'Please add a password']
+    },
+    firstName: {
+      type: String,
+      required: [true, 'Please add a name'],
+      trim: true,
+    },
+    lastName: {
+      type: String,
+      required: [true, 'Please add a last name'],
+      trim: true,
+    },
+    city: {
+      type: String,
+      trim: true,
+    },
+    phone: {
+      type: Number,
+      trim: true,
+    },
   },
   {
     timestamps: true

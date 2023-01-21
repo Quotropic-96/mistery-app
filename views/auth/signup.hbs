@@ -1,9 +1,19 @@
 <h2>Sign Up!</h2>
     <form method="POST" action="/auth/signup">
+    <label> email </label>
+    <input type="email" name="email" placeholder="blabla@gmail.com" required>
     <label> User name </label>
-    <input type="text" name="username" placeholder="Clara Chía" required>
+    <input type="text" name="username" placeholder="Clara_Chía" required>
     <label>Password</label>
     <input type="password" name="password" placeholder="**********" required>
+    <label> First name: </label>
+    <input type="text" name="firstName" placeholder="Clara" required>
+    <label> Last name: </label>
+    <input type="text" name="lastName" placeholder="Chía" required>
+    <label> City: </label>
+    <input type="text" name="city" placeholder="Barcelona">
+    <label> Phone </label>
+    <input type="number" name="phone" placeholder="666777888" required>
     <button type="submit">Register</button>
     <a href="/auth/login">Are you registered? Log in here!</a>
     {{#if error}}
