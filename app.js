@@ -10,6 +10,7 @@ const MongoStore = require('connect-mongo');
 
 // router files
 const indexRouter = require('./routes/index');
+const authRouter = require('./routes/auth');
 
 const app = express();
 
@@ -22,6 +23,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Handles the handlebars
+// https://www.npmjs.com/package/hbs
+const hbs = require('hbs');
+const path = require('path');
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname + '/views/partials'); 
 
 // For deployment
 app.set('trust proxy', 1);
@@ -45,6 +56,7 @@ app.use(
 
 // router endpoint setting
 app.use('/', indexRouter);
+app.use('/auth', authRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
