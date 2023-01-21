@@ -1,0 +1,20 @@
+<div id="form">
+<h2>Edit recipe</h2>
+    <form method="POST" action="/recipes/{{_id}}/edit">
+    <label> Name </label>
+    <input type="text" name="name" value={{name}} required />
+    <label> People </label>
+    <input type="number" name="people" value={{people}} required />
+    <label> Time </label>
+    <input type="number" name="time"  value={{number}} required />
+    <label> Image </label>
+    <input type="text" name="image" value={{image}} required />
+    <label> Description </label>
+    <textarea name="description" cols="30" rows="5"> {{description}} </textarea>
+    <label> Creator </label>
+    <input type="text" name="creator" value={{user}} required/>
+    <button type="submit">Edit Recipe</button>
+    
+    
+</form>
+</div>
